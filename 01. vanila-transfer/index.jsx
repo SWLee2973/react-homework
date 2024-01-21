@@ -1,5 +1,8 @@
 import React from "https://esm.sh/react";
 import { createRoot } from "https://esm.sh/react-dom";
+import './styles/reset.css';
+import './styles/style.css';
+
 
 const logoImage = (
   <svg width="82" height="42" viewBox="0 0 82 42" fill="none" xmlns="http://www.w3.org/2000/svg">
