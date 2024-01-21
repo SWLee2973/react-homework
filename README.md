@@ -9,12 +9,14 @@
 
 ### 2. 코드 작성 과정
 
-1) 과제 스케폴딩<br />
+1) 과제 스케폴딩
+---
 - `pnpm` 사용
 - 수업에서 배운 `jsx`의 컴파일 방식 중 프로젝트 때 사용해 익숙한 `vite`를 사용하기로 결정
 - `netlify`를 이용해 배포
 
 2) 헤더 root의 구역 할당
+---
 - 상단: 로그인 상태 표시
 - 하단: 로고 및 검색버튼 / 기능버튼
 ```js
@@ -27,24 +29,26 @@ const headerWrapper = (
 ```
 
 3) 로그인 상태 표시 코드 작성
+---
 - 로그인 상태(`isAuth`)에 따라 `signMenu` 컴포넌트를 다르게 전달해주도록 구성했다.<br />
 
   <table>
   <tr>
     <td rowspan="4">
       signMenu<br />
-      ![signmenu](screenshots/signMenu.png)
+      ![signmenu](./screenshots/signMenu.png)
     </td>
     <th>isAuth=true</th>
   </tr>
   <tr>
-    <td>![auth_false](screenshots/isAuth-false.pngimage.png)</td>
+    <td>![auth_false](./screenshots/isAuth-false.pngimage.png)</td>
   </tr>
   <tr>
     <th>isAuth=false</th>
   </tr>
   <tr>
-    <td>![auth_true](screenshots/isAuth-true.pngimage.png)</td>
+    <td>![auth_true](./screenshots/isAuth-true.pngimage.png)</td>
   </tr>
   
   </table>
+  
