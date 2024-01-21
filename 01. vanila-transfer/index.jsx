@@ -37,22 +37,34 @@ const searchBox = (
   </form>
 )
 
+const menuLink = (
+  <div className="menu_link">
+    <button type="button" aria-label="배송지" className="menu_link__address"></button>
+    <button type="button" aria-label="찜하기" className="menu_link__like"></button>
+    <a href="/src/pages/cart/" role="button" aria-label="장바구니" className="menu_link__cart"></a>
+  </div>
+)
+
 const visual = (
-  <></>
+  <div className="visual">
+    {visualTitle}
+    {searchBox}
+    {menuLink}
+  </div>
 )
 
 const loginMenu = (
   <ul className="sign_menu">
     <li>
-      <a href="/src/pages/register/" class="menu_join">회원가입</a>
+      <a href="#" className="menu_join">회원가입</a>
     </li>
     <li>
-      <a href="/src/pages/login/" class="menu_login">로그인</a>
+      <a href="#" className="menu_login">로그인</a>
     </li>
     <li>
-      <a href="/" class="menu_customer">
+      <a href="#" className="menu_customer">
         고객센터
-        <span class="icon_down"></span>
+        <span className="icon_down"></span>
       </a>
     </li>
   </ul>
@@ -74,7 +86,7 @@ const myMenu = (
   </ul>
 )
 
-let isAuth = true;
+let isAuth = false;
 const signMenu = isAuth ? myMenu : loginMenu;
 
 const headerWrapper = (
@@ -84,6 +96,6 @@ const headerWrapper = (
   </div>
 )
 
-
-createRoot(document.querySelector(".header"))
-  .render(headerWrapper);
+const headerRoot = document.querySelector(".header");
+createRoot(headerRoot).render(headerWrapper);
+// createRoot(headerRoot).render(headerWrapper);
