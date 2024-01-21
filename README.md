@@ -32,6 +32,7 @@ const headerWrapper = (
 ---
 - 로그인 상태(`isAuth`)에 따라 `signMenu` 컴포넌트를 다르게 전달해주도록 구성했다.<br />
 
+
   <table>
   <tr>
     <td rowspan="4">
@@ -50,6 +51,11 @@ const headerWrapper = (
     <td>
       
 ![auth_true](./screenshots/isAuth-true.png)
-    </td>  
-  </table>
+  </td>  
+
+</table>  
   
+  
+4) visual의 구역 할당
+---
+- 
