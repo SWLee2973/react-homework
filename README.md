@@ -36,19 +36,20 @@ const headerWrapper = (
   <tr>
     <td rowspan="4">
       signMenu<br />
-      ![signmenu](./screenshots/signMenu.png)
+![signmenu](./screenshots/signMenu.png)
     </td>
     <th>isAuth=true</th>
   </tr>
-  <tr>
-    <td>![auth_false](./screenshots/isAuth-false.pngimage.png)</td>
-  </tr>
+  <td>
+    
+![auth_false](./screenshots/isAuth-false.png)
+  </td>
   <tr>
     <th>isAuth=false</th>
   </tr>
-  <tr>
-    <td>![auth_true](./screenshots/isAuth-true.pngimage.png)</td>
-  </tr>
-  
+    <td>
+      
+![auth_true](./screenshots/isAuth-true.png)
+    </td>  
   </table>
   
