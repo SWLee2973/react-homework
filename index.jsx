@@ -22,7 +22,7 @@ const visualTitle = (
     <a href="/" className="logo">{logoImage}</a>
     <span className="karly-wrapper">
       <button type="button" className="market-karly">마켓칼리</button>
-      <button type="button" className="beauty-karly">마켓칼리</button>
+      <button type="button" className="beauty-karly">뷰티칼리</button>
     </span>
   </div>
 )
@@ -34,10 +34,10 @@ const searchImage = (
 )
 
 const searchBox = (
-  <form action="" method="POST">
+  <div className="search_box">
     <input type="search" placeholder="검색어를 입력해주세요" />
-    <button type="submit">{searchImage}</button>
-  </form>
+    <button type="button">{searchImage}</button>
+  </div>
 )
 
 const menuLink = (
@@ -55,6 +55,7 @@ const visual = (
     {menuLink}
   </div>
 )
+
 
 const loginMenu = (
   <ul className="sign_menu">
@@ -89,7 +90,7 @@ const myMenu = (
   </ul>
 )
 
-let isAuth = false;
+let isAuth = true;
 const signMenu = isAuth ? myMenu : loginMenu;
 
 const headerWrapper = (
@@ -100,5 +101,7 @@ const headerWrapper = (
 )
 
 const headerRoot = document.querySelector(".header");
-createRoot(headerRoot).render(headerWrapper);
-// createRoot(headerRoot).render(headerWrapper);
+createRoot(headerRoot).render(headerWrapper)
+
+
+
